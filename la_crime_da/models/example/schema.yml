@@ -1,0 +1,103 @@
+version: 2
+
+models:
+    - name: area_summary
+      description: "Summary statistics for each area including median coordinates"
+      columns:
+          - name: area_name
+            description: "Name of the area"
+          - name: CrimeCount
+            description: "Total number of crimes in the area"
+          - name: MedianLatitude
+            description: "Median latitude of crime occurrences in the area"
+          - name: MedianLongitude
+            description: "Median longitude of crime occurrences in the area"
+
+    - name: top10crime
+      description: "Top 10 crime codes based on frequency"
+      columns:
+          - name: crime_code
+            description: "Numeric code for the crime type"
+          - name: CrimeCount
+            description: "Count of occurrences for each crime code"
+
+    - name: crime_data
+      description: "LA Crime Data with detailed incident information"
+      columns:
+          - name: date_reported
+            description: "The date and time the crime was reported."
+
+          - name: date_occurred
+            description: "The date and time the crime occurred."
+
+          - name: area
+            description: "Numeric area identifier"
+
+          - name: area_name
+            description: "Name of the area"
+
+          - name: reporting_district
+            description: "District where the crime was reported"
+
+          - name: part
+            description: "Crime classification part"
+
+          - name: crime_code
+            description: "Numeric code for the crime type"
+
+          - name: crime_description
+            description: "Description of the crime"
+
+          - name: modus_operandi
+            description: "Method of operation"
+
+          - name: victim_age
+            description: "Age of the victim"
+
+          - name: victim_sex
+            description: "Sex of the victim"
+
+          - name: victim_descent
+            description: "Descent/ethnicity of the victim"
+
+          - name: premise_code
+            description: "Code for the premises where crime occurred"
+
+          - name: premise_description
+            description: "Description of the premises"
+
+          - name: weapon_code
+            description: "Code for weapon used"
+
+          - name: weapon_description
+            description: "Description of weapon used"
+
+          - name: status
+            description: "Status of the case"
+
+          - name: status_description
+            description: "Detailed description of the case status"
+
+          - name: crime_code_1
+            description: "Secondary crime code"
+
+          - name: location
+            description: "Location description"
+
+          - name: latitude
+            description: "Geographic latitude"
+
+          - name: longitude
+            description: "Geographic longitude"
+
+          - name: report_delay
+            description: "Delay in reporting (in days)"
+
+          - name: hour_occurred
+            description: "Hour when the crime occurred"
+
+          - name: day_of_week
+            description: "Day of the week"
+
+          - name: age_group
+            description: "Age group category"

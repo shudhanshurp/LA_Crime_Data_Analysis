@@ -1,0 +1,1 @@
+wget -O - https://media.githubusercontent.com/media/shudhanshurp/LA_Crime_Data_Analysis/refs/heads/main/Crime_Data_from_2020_to_Present.csv | aws s3 cp - s3://la-crime-data-sp/raw-data/Crime_Data_from_2020_to_Present.csv
