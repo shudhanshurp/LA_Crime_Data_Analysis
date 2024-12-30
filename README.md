@@ -1,4 +1,4 @@
-﻿# Crime Data Analysis Pipeline
+﻿# LA Crime Data Analysis Pipeline
 
 ## Overview
 
@@ -37,7 +37,7 @@ Apache Spark, running on an EMR cluster, handles data transformation.
 
 ### Transformation Script:
 
--   **File**: `transformed.py`
+-   **File**: `la_crime_data_transformation.py`
 -   **Details**:
     -   Cleans and transforms the data by:
         -   Dropping unnecessary columns.
@@ -98,20 +98,3 @@ The transformed and modeled data is visualized through Power BI dashboards to pr
 -   **Response Times and Outcomes**: Metrics for law enforcement response times and investigation outcomes.
 
     ![Response Times](/analysis_dashboard_img/crime_analysis-5.png)
-
----
-
-## Conclusion
-
-This pipeline leverages cutting-edge technologies to provide a comprehensive analysis of crime patterns and trends. By transforming raw data into actionable insights, it empowers law enforcement agencies to optimize resource allocation and enhance strategic planning.
-
----
-
-### Repository Contents
-
--   **`scripts/ingest.sh`**: Script for data ingestion.
--   **`scripts/transformed.py`**: Spark script for data transformation.
--   **`models/`**: dbt models for data processing and analytics.
--   **`dashboards/`**: Sample Power BI dashboard files.
-
-Feel free to explore the repository, and contribute enhancements to further improve this pipeline!
